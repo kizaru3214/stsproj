@@ -8,6 +8,15 @@ body {
     width: 1920px;
     transform: scale(calc(100vw / 1920));
     transform-origin: top left;
+    transform: scale(0.8); /* 80% zoom effect */
+    transform-origin: 0 0; /* Scale from the top left corner */
+    width: 125%; /* Compensate for the scaling so that content doesn't get clipped */
+}
+@media (min-width: 1200px) {
+  html, body {
+    transform: scale(1); /* 100% scale for larger screens */
+    width: 100%; /* Reset the width */
+  }
 }
 
 .cards {
