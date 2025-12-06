@@ -52,7 +52,7 @@
 }
 
 body {
-    background-image: url('/Images/image5.png');
+    background-image: url('images/image5.png');
     background-size: 100% auto;
     background-position: center top;
     background-repeat: no-repeat;
@@ -88,7 +88,7 @@ body {
     font-weight: 400;
     position: relative;
     top: -30px;
-    left: 110px;
+    left: 50px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     animation: slideInFromLeft 0.8s ease-out;
 }
@@ -497,4 +497,26 @@ body {
   color: transparent;
 }
 
+/* Mobile responsiveness */
+@media (max-width: 1024px) {
+    .second-disc, .third-disc, .fourth-disc {
+        display: block;
+        width: 85%;
+        max-width: 400px;
+        margin: 20px auto;
+        left: 0 !important;
+        top: 20px !important;
+    }
+}
 
+@media (max-width: 768px) {
+    .nav-bar {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .nav-bar a {
+        display: block;
+        padding: 10px 0;
+    }
+}
