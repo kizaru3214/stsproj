@@ -59,6 +59,7 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 .nav-bar {
     padding-left: 41%;
@@ -507,6 +508,12 @@ body {
         left: 0 !important;
         top: 20px !important;
     }
+
+    .button {
+        top: 10px;
+        left: 10px;
+        padding: 0.8rem 1.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -518,5 +525,56 @@ body {
     .nav-bar a {
         display: block;
         padding: 10px 0;
+    }
+
+    .Logo {
+        font-size: 28px;
+    }
+
+    .start {
+        left: 0;
+        font-size: 14px;
+    }
+
+    .second-disc, .third-disc, .fourth-disc {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .Disc {
+        font-size: 100px;
+    }
+
+    .first-disc p, .second-disc p {
+        font-size: 14px;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .nav-bar {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .start {
+        width: 80%;
+        left: 0;
+        padding: 12px 25px;
+        font-size: 13px;
+    }
+
+    .Disc {
+        font-size: 80px;
+    }
+
+    .first-disc p, .second-disc p {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .second-disc, .third-disc, .fourth-disc {
+        width: 100%;
+        max-width: 350px;
     }
 }

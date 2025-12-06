@@ -5,6 +5,9 @@ body {
     padding: 0;
     overflow: hidden;
     background: #000;
+    width: 1920px;
+    transform: scale(calc(100vw / 1920));
+    transform-origin: top left;
 }
 
 .cards {
