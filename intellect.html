@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exploring Intellect</title>
+    <link rel="stylesheet" href="intellect.css" />
+  </head>
+  <body>
+    <div class="particles" id="particles"></div>
+
+    <div class="nav-container">
+      <nav class="nav">
+        <a href="ai.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="articles.html">Articles</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="vertical-text">EXPLORING INTELLECT</h1>
+      </div>
+      <div class="hero-image">
+        <div class="robot-container">
+          <div class="glow-effect"></div>
+          <svg viewBox="0 0 500 500" style="width: 100%; height: 100%">
+            <!-- Advanced Robot Head -->
+            <defs>
+              <linearGradient
+                id="metalGrad"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: #4a5568; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #2d3748; stop-opacity: 1"
+                />
+              </linearGradient>
+              <linearGradient id="blueGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+                <stop
+                  offset="0%"
+                  style="stop-color: #64b5f6; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #42a5f5; stop-opacity: 1"
+                />
+              </linearGradient>
+            </defs>
+
+            <!-- Main Head -->
+            <rect
+              x="150"
+              y="100"
+              width="200"
+              height="150"
+              fill="url(#metalGrad)"
+              rx="20"
+            />
+
+            <!-- Eyes -->
+            <circle cx="200" cy="160" r="20" fill="#64b5f6" opacity="0.9">
+              <animate
+                attributeName="opacity"
+                values="0.9;1;0.9"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="300" cy="160" r="20" fill="#64b5f6" opacity="0.9">
+              <animate
+                attributeName="opacity"
+                values="0.9;1;0.9"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </circle>
+
+            <!-- Head Details -->
+            <line
+              x1="170"
+              y1="120"
+              x2="330"
+              y2="120"
+              stroke="#64b5f6"
+              stroke-width="2"
+              opacity="0.5"
+            />
+            <line
+              x1="170"
+              y1="135"
+              x2="330"
+              y2="135"
+              stroke="#64b5f6"
+              stroke-width="2"
+              opacity="0.3"
+            />
+
+            <!-- Antenna -->
+            <line
+              x1="250"
+              y1="100"
+              x2="250"
+              y2="60"
+              stroke="#64b5f6"
+              stroke-width="4"
+            />
+            <circle cx="250" cy="50" r="10" fill="url(#blueGlow)">
+              <animate
+                attributeName="r"
+                values="10;15;10"
+                dur="1.5s"
+                repeatCount="indefinite"
+              />
+            </circle>
+
+            <!-- Body -->
+            <rect
+              x="140"
+              y="260"
+              width="220"
+              height="180"
+              fill="url(#metalGrad)"
+              rx="25"
+            />
+
+            <!-- Body Core -->
+            <circle
+              cx="250"
+              cy="350"
+              r="40"
+              fill="none"
+              stroke="url(#blueGlow)"
+              stroke-width="3"
+            >
+              <animate
+                attributeName="stroke-dasharray"
+                values="0 251;251 0"
+                dur="3s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle cx="250" cy="350" r="25" fill="#64b5f6" opacity="0.3">
+              <animate
+                attributeName="opacity"
+                values="0.3;0.6;0.3"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </circle>
+
+            <!-- Arms -->
+            <rect
+              x="90"
+              y="270"
+              width="40"
+              height="100"
+              fill="url(#metalGrad)"
+              rx="15"
+            />
+            <rect
+              x="370"
+              y="270"
+              width="40"
+              height="100"
+              fill="url(#metalGrad)"
+              rx="15"
+            />
+
+            <!-- Shoulder joints -->
+            <circle cx="110" cy="280" r="15" fill="#64b5f6" opacity="0.7" />
+            <circle cx="390" cy="280" r="15" fill="#64b5f6" opacity="0.7" />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="section-title">The Power of Artificial Intelligence</h2>
+
+      <div class="content-grid">
+        <div class="content-card">
+          <h3 class="card-title">Neural Networks</h3>
+          <p class="card-text">
+            Inspired by the human brain, neural networks are the foundation of
+            modern AI. These interconnected layers of nodes process information
+            in ways that mirror biological learning, enabling machines to
+            recognize patterns, make decisions, and continuously improve their
+            performance.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h3 class="card-title">Machine Learning</h3>
+          <p class="card-text">
+            Machine learning empowers systems to learn from experience without
+            explicit programming. By analyzing vast amounts of data, algorithms
+            identify patterns and make predictions, revolutionizing everything
+            from recommendation systems to autonomous vehicles.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h3 class="card-title">Deep Learning</h3>
+          <p class="card-text">
+            Taking neural networks to new heights, deep learning uses multiple
+            layers to extract increasingly complex features from raw data. This
+            technology powers breakthrough applications in image recognition,
+            natural language processing, and creative AI systems.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h3 class="card-title">Natural Language Processing</h3>
+          <p class="card-text">
+            NLP bridges the gap between human communication and machine
+            understanding. From chatbots to translation services, this
+            technology enables computers to comprehend, interpret, and generate
+            human language with remarkable accuracy.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h3 class="card-title">Computer Vision</h3>
+          <p class="card-text">
+            Teaching machines to see and understand visual information, computer
+            vision powers facial recognition, medical imaging analysis, and
+            autonomous navigation systems. It's transforming how we interact
+            with technology and interpret our world.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h3 class="card-title">The Future Awaits</h3>
+          <p class="card-text">
+            As AI continues to evolve, we stand on the brink of unprecedented
+            possibilities. From solving complex global challenges to augmenting
+            human creativity, artificial intelligence is reshaping our future in
+            ways we're only beginning to imagine.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Create floating particles
+      const particlesContainer = document.getElementById("particles");
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement("div");
+        particle.className = "particle";
+        particle.style.left = Math.random() * 100 + "%";
+        particle.style.animationDuration = Math.random() * 15 + 10 + "s";
+        particle.style.animationDelay = Math.random() * 5 + "s";
+        particlesContainer.appendChild(particle);
+      }
+    </script>
+  </body>
+</html>

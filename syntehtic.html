@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artificial Synth</title>
+    <link rel="stylesheet" href="syntehtic.css" />
+  </head>
+  <body>
+    <div class="particles" id="particles"></div>
+
+    <div class="nav-container">
+      <nav class="nav">
+        <a href="ai.html">Home</a>
+        <a href="history.html">History</a>
+        <a href="articles.html">Articles</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
+
+    <section class="hero">
+      <div class="hero-text">
+        <h1 class="vertical-text">ARTIFICIAL SYNTH</h1>
+      </div>
+      <div class="hero-image">
+        <div class="brain-container">
+          <div class="glow-effect"></div>
+          <svg viewBox="0 0 500 500" style="width: 100%; height: 100%">
+            <defs>
+              <linearGradient
+                id="brainGrad"
+                x1="0%"
+                y1="0%"
+                x2="100%"
+                y2="100%"
+              >
+                <stop
+                  offset="0%"
+                  style="stop-color: #ff6b9d; stop-opacity: 1"
+                />
+                <stop
+                  offset="100%"
+                  style="stop-color: #c44569; stop-opacity: 1"
+                />
+              </linearGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="4" result="coloredBlur" />
+                <feMerge>
+                  <feMergeNode in="coloredBlur" />
+                  <feMergeNode in="SourceGraphic" />
+                </feMerge>
+              </filter>
+            </defs>
+
+            <!-- Digital Brain Structure -->
+            <circle
+              cx="250"
+              cy="200"
+              r="80"
+              fill="none"
+              stroke="url(#brainGrad)"
+              stroke-width="3"
+              filter="url(#glow)"
+            >
+              <animate
+                attributeName="stroke-dasharray"
+                values="0 502;502 0"
+                dur="4s"
+                repeatCount="indefinite"
+              />
+            </circle>
+
+            <!-- Inner brain details -->
+            <circle
+              cx="250"
+              cy="200"
+              r="60"
+              fill="none"
+              stroke="#ff6b9d"
+              stroke-width="2"
+              opacity="0.6"
+            >
+              <animate
+                attributeName="r"
+                values="60;65;60"
+                dur="3s"
+                repeatCount="indefinite"
+              />
+            </circle>
+
+            <!-- Neural connections -->
+            <line
+              x1="200"
+              y1="200"
+              x2="150"
+              y2="250"
+              stroke="#ff6b9d"
+              stroke-width="2"
+              opacity="0.7"
+            >
+              <animate
+                attributeName="opacity"
+                values="0.3;0.9;0.3"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </line>
+            <line
+              x1="300"
+              y1="200"
+              x2="350"
+              y2="250"
+              stroke="#ff6b9d"
+              stroke-width="2"
+              opacity="0.7"
+            >
+              <animate
+                attributeName="opacity"
+                values="0.3;0.9;0.3"
+                dur="2s"
+                begin="0.5s"
+                repeatCount="indefinite"
+              />
+            </line>
+            <line
+              x1="250"
+              y1="150"
+              x2="250"
+              y2="100"
+              stroke="#ff6b9d"
+              stroke-width="2"
+              opacity="0.7"
+            >
+              <animate
+                attributeName="opacity"
+                values="0.3;0.9;0.3"
+                dur="2s"
+                begin="1s"
+                repeatCount="indefinite"
+              />
+            </line>
+
+            <!-- Nodes -->
+            <circle
+              cx="150"
+              cy="250"
+              r="15"
+              fill="url(#brainGrad)"
+              opacity="0.8"
+            >
+              <animate
+                attributeName="r"
+                values="15;20;15"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle
+              cx="350"
+              cy="250"
+              r="15"
+              fill="url(#brainGrad)"
+              opacity="0.8"
+            >
+              <animate
+                attributeName="r"
+                values="15;20;15"
+                dur="2s"
+                begin="0.5s"
+                repeatCount="indefinite"
+              />
+            </circle>
+            <circle
+              cx="250"
+              cy="100"
+              r="15"
+              fill="url(#brainGrad)"
+              opacity="0.8"
+            >
+              <animate
+                attributeName="r"
+                values="15;20;15"
+                dur="2s"
+                begin="1s"
+                repeatCount="indefinite"
+              />
+            </circle>
+
+            <!-- Central processor -->
+            <circle cx="250" cy="200" r="25" fill="#ff6b9d" opacity="0.5">
+              <animate
+                attributeName="opacity"
+                values="0.3;0.8;0.3"
+                dur="2s"
+                repeatCount="indefinite"
+              />
+            </circle>
+
+            <!-- Data streams -->
+            <path
+              d="M 250 280 Q 200 320 180 360"
+              fill="none"
+              stroke="#ff6b9d"
+              stroke-width="2"
+              opacity="0.5"
+            >
+              <animate
+                attributeName="stroke-dasharray"
+                values="0 200;200 0"
+                dur="3s"
+                repeatCount="indefinite"
+              />
+            </path>
+            <path
+              d="M 250 280 Q 300 320 320 360"
+              fill="none"
+              stroke="#ff6b9d"
+              stroke-width="2"
+              opacity="0.5"
+            >
+              <animate
+                attributeName="stroke-dasharray"
+                values="0 200;200 0"
+                dur="3s"
+                begin="0.5s"
+                repeatCount="indefinite"
+              />
+            </path>
+
+            <!-- Keyboard/Interface representation -->
+            <rect
+              x="150"
+              y="370"
+              width="200"
+              height="80"
+              rx="10"
+              fill="rgba(255, 107, 157, 0.1)"
+              stroke="#ff6b9d"
+              stroke-width="2"
+            />
+
+            <!-- Keys -->
+            <rect
+              x="165"
+              y="385"
+              width="30"
+              height="20"
+              rx="3"
+              fill="#ff6b9d"
+              opacity="0.3"
+            />
+            <rect
+              x="205"
+              y="385"
+              width="30"
+              height="20"
+              rx="3"
+              fill="#ff6b9d"
+              opacity="0.3"
+            />
+            <rect
+              x="245"
+              y="385"
+              width="30"
+              height="20"
+              rx="3"
+              fill="#ff6b9d"
+              opacity="0.3"
+            />
+            <rect
+              x="285"
+              y="385"
+              width="30"
+              height="20"
+              rx="3"
+              fill="#ff6b9d"
+              opacity="0.3"
+            />
+            <rect
+              x="165"
+              y="415"
+              width="30"
+              height="20"
+              rx="3"
+              fill="#ff6b9d"
+              opacity="0.3"
+            />
+            <rect
+              x="205"
+              y="415"
+              width="30"
+              height="20"
+              rx="3"
+              fill="#ff6b9d"
+              opacity="0.3"
+            />
+            <rect
+              x="245"
+              y="415"
+              width="30"
+              height="20"
+              rx="3"
+              fill="#ff6b9d"
+              opacity="0.3"
+            />
+            <rect
+              x="285"
+              y="415"
+              width="30"
+              height="20"
+              rx="3"
+              fill="#ff6b9d"
+              opacity="0.3"
+            />
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <h2 class="section-title">Synthesizing Intelligence</h2>
+
+      <div class="content-grid">
+        <div class="content-card">
+          <h3 class="card-title">Synthetic Learning</h3>
+          <p class="card-text">
+            Artificial synthesis combines multiple AI techniques to create
+            systems that learn and adapt like living organisms. By merging
+            neural networks, evolutionary algorithms, and cognitive
+            architectures, we're building intelligence that transcends
+            traditional programming.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h3 class="card-title">Data Fusion</h3>
+          <p class="card-text">
+            Modern AI synthesizes information from countless sources, creating
+            unified understanding from fragmented data. This fusion enables
+            machines to see connections humans might miss, revealing patterns
+            across disciplines and domains.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h3 class="card-title">Cognitive Architecture</h3>
+          <p class="card-text">
+            Inspired by human cognition, synthetic architectures replicate
+            memory, reasoning, and decision-making processes. These systems
+            don't just process information—they understand context, learn from
+            mistakes, and adapt to new situations.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h3 class="card-title">Generative AI</h3>
+          <p class="card-text">
+            Generative models synthesize entirely new content—from text and
+            images to music and code. By learning the underlying patterns in
+            data, these systems create original works that push the boundaries
+            of machine creativity.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h3 class="card-title">Hybrid Intelligence</h3>
+          <p class="card-text">
+            The future lies in synthesizing human and artificial intelligence.
+            Hybrid systems combine human intuition with machine precision,
+            creating partnerships that amplify our capabilities and extend our
+            reach into complex problem spaces.
+          </p>
+        </div>
+
+        <div class="content-card">
+          <h3 class="card-title">Emergence & Evolution</h3>
+          <p class="card-text">
+            Through synthetic processes, AI systems develop emergent
+            behaviors—capabilities that weren't explicitly programmed. Like
+            biological evolution, these systems grow more sophisticated over
+            time, discovering novel solutions to unprecedented challenges.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <script>
+      // Create floating particles
+      const particlesContainer = document.getElementById("particles");
+      for (let i = 0; i < 50; i++) {
+        const particle = document.createElement("div");
+        particle.className = "particle";
+        particle.style.left = Math.random() * 100 + "%";
+        particle.style.animationDuration = Math.random() * 15 + 10 + "s";
+        particle.style.animationDelay = Math.random() * 5 + "s";
+        particlesContainer.appendChild(particle);
+      }
+    </script>
+  </body>
+</html>

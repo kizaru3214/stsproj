@@ -1,0 +1,500 @@
+@keyframes slideInFromTop {
+    0% {
+        transform: translateY(-100px);
+        opacity: 0F;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromBottom {
+    0% {
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    background-image: url('images/image5.png');
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-bar {
+    padding-left: 41%;
+    padding-top: 40px;
+    animation: slideInFromTop 0.8s ease-out;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    position: relative;
+    justify-content: space-between;
+    padding-left: 40px;
+    color: rgba(220, 220, 220, 0.904);
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-bar a:hover {
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.Logo {
+    text-decoration: none;
+    color: white;
+    font-size: 35px;
+    font-weight: 400;
+    position: relative;
+    top: -30px;
+    left: -30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: slideInFromLeft 0.8s ease-out;
+}
+
+.Logo span {
+    font-size: 30px;
+    position: relative;
+    top: -12px;
+    right: 5px;
+}
+
+.start {
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    border: 2px solid rgba(255, 253, 253, 0.61);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    font-size: 15px;
+    position: relative;
+    top: -35px;
+    transition: all 0.3s ease;
+    left: 1650px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    animation: slideInFromRight 0.8s ease-out;
+}
+
+.start:hover {
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+.first-disc {
+    animation: slideInFromLeft 1s ease-out 0.2s both;
+}
+
+.Disc {
+    color: white;
+    font-size: 150px;
+    position: relative;
+    line-height: 110px;
+    font-weight: 100;
+    left: 100px;
+    top: -40px;
+}
+
+.first-disc p {
+    position: relative;
+    left: 105px;
+    top: -90px;
+    font-size: 17px;
+    line-height: 2;
+    font-weight: 300;
+    color: #ffffff;
+    max-width: 300px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.first-disc span {
+    background: linear-gradient(180deg, #ffffff 0%, #2272a0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.second-disc {
+    position: relative;
+    left: 100px;
+    top: -60px;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(2, 27, 49, 0.658);
+    height: 200px;
+    width: 300px;
+    animation: slideInFromBottom 0.8s ease-out 0.4s both;
+}
+
+.second-disc p {
+    color: white;
+    position: relative;
+    font-size: 30px;
+    top: -25px;
+}
+
+.second-disc a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: -30px;
+}
+
+.second-disc a:hover {
+    text-decoration: underline;
+    transition: 1.5s ease;
+}
+
+.second-disc:hover {
+    transition: 0.2s ease-in-out;
+    scale: calc(1.1);
+}
+
+.second-disc h3 {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 300;
+    color: #ffffff;
+    max-width: 400px;
+    margin: 0;
+    font-weight: 500;
+    position: relative;
+    top: -45px;
+}
+
+.third-disc p {
+    color: white;
+    position: relative;
+    font-size: 25px;
+    top: -16px;
+}
+
+.third-disc h3 {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 300;
+    color: #ffffff;
+    max-width: 400px;
+    margin: 0;
+    font-weight: 500;
+    position: relative;
+    top: -30px;
+}
+
+.third-disc {
+    position: relative;
+    left: 520px;
+    top: -300px;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(2, 27, 49, 0.658);
+    height: 200px;
+    width: 300px;
+    animation: slideInFromBottom 0.8s ease-out 0.6s both;
+}
+
+.third-disc a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 36px;
+    font-size: 16px;
+}
+
+.third-disc a:hover {
+    text-decoration: underline;
+    transition: 1.5s ease;
+}
+
+.third-disc:hover {
+    transition: 0.2s ease-in-out;
+    scale: calc(1.1);
+}
+
+.fourth-disc {
+    position: relative;
+    left: 940px;
+    top: -543px;
+    color: white;
+    font-weight: 100;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    box-shadow: 0 8px 32px rgba(2, 27, 49, 0.658);
+    height: 200px;
+    width: 300px;
+    animation: slideInFromBottom 0.8s ease-out 0.8s both;
+}
+.fourth-disc p {
+    font-size: 25px;
+    position: relative;
+    top: -15px;
+    
+}
+.fourth-disc h3 {
+    position: relative;
+    top: -32px;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.fourth-disc a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    top: 46px;
+    font-size: 16px;
+    left: -135px;
+    font-weight: 100;
+    font-size: 16px;
+}
+
+.fourth-disc a:hover {
+    text-decoration: underline;
+    transition: 1.5s ease;
+}
+
+.fourth-disc:hover {
+    transition: 0.2s ease-in-out;
+    scale: calc(1.1);
+}
+
+
+.button {
+  --black-700: rgb(25, 25, 26);
+  --border_radius: 9999px;
+  --transtion: 0.3s ease-in-out;
+  --offset: 2px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transform-origin: center;
+  top: -100px;
+  left: 120px;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  border: none;
+  border-radius: var(--border_radius);
+  transform: scale(calc(1 + (var(--active, 0) * 0.1)));
+  transition: transform var(--transtion);
+  animation: fadeIn 1s ease-out 0.6s both;
+  
+}
+.wawbutton a{
+  text-decoration: none;
+}
+.button a {
+  text-decoration: none;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  background-color: var(--black-700);
+
+  border-radius: var(--border_radius);
+    
+
+  transition: all var(--transtion);
+  z-index: 0;
+}
+
+.button::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 100%;
+  height: 100%;
+  background-color: rgb(30, 30, 31);
+  background-image: radial-gradient(
+      at 51% 89%,
+      rgb(30, 30, 31) 0px,
+      transparent 50%
+    ),
+    radial-gradient(at 100% 100%, rgb(30, 30, 31) 0px, transparent 50%),
+    radial-gradient(at 22% 91%, rgb(30, 30, 31)  0px, transparent 50%);
+  background-position: top;
+
+  opacity: var(--active, 0);
+  border-radius: var(--border_radius);
+  transition: opacity var(--transtion);
+  z-index: 2;
+}
+
+.button:is(:hover, :focus-visible) {
+  --active: 1;
+}
+.button:active {
+  transform: scale(1);
+}
+
+.button .dots_border {
+  --size_border: calc(100% + 2px);
+
+  overflow: hidden;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: var(--size_border);
+  height: var(--size_border);
+  background-color: transparent;
+
+  border-radius: var(--border_radius);
+  z-index: -10;
+}
+
+.button .dots_border::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: left;
+  transform: rotate(0deg);
+
+  width: 100%;
+  height: 2rem;
+  background-color: white;
+
+  mask: linear-gradient(transparent 0%, white 120%);
+  animation: rotate 2s linear infinite;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.button .sparkle {
+  position: relative;
+  z-index: 10;
+
+  width: 1.75rem;
+}
+
+.button .sparkle .path {
+  fill: currentColor;
+  stroke: currentColor;
+
+  transform-origin: center;
+
+  color: hsl(0, 0%, 100%);
+}
+
+.button:is(:hover, :focus) .sparkle .path {
+  animation: path 1.5s linear 0.5s infinite;
+}
+
+.button .sparkle .path:nth-child(1) {
+  --scale_path_1: 1.2;
+}
+.button .sparkle .path:nth-child(2) {
+  --scale_path_2: 1.2;
+}
+.button .sparkle .path:nth-child(3) {
+  --scale_path_3: 1.2;
+}
+
+@keyframes path {
+  0%,
+  34%,
+  71%,
+  100% {
+    transform: scale(1);
+  }
+  17% {
+    transform: scale(var(--scale_path_1, 1));
+  }
+  49% {
+    transform: scale(var(--scale_path_2, 1));
+  }
+  83% {
+    transform: scale(var(--scale_path_3, 1));
+  }
+}
+
+.button .text_button {
+  position: relative;
+  z-index: 10;
+
+  background-image: linear-gradient(
+    90deg,
+    hsla(0 0% 100% / 1) 0%,
+    hsla(0 0% 100% / var(--active, 0)) 120%
+  );
+  background-clip: text;
+
+  font-size: 1rem;
+  color: transparent;
+}
+
+

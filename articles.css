@@ -1,0 +1,145 @@
+body {
+    background-image:url('Images/articlebg.jpg');
+    background-size: 100% auto;
+    background-position: center top;
+    background-repeat: no-repeat;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.nav-bar {
+    left: 700px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 25px;
+    border: 1px solid white;
+    position: relative;
+    top: 100px;
+    width: 500px;
+    animation: slideInFromTop 0.8s ease-out;
+}
+
+@keyframes slideInFromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-bar a {
+    text-decoration: none;
+    position: relative;
+    justify-content: space-between;
+    padding-left: 50px;
+    color: rgba(220, 220, 220, 0.904);
+    transition: opacity 0.4s ease, transform 0.4s ease, text-shadow 0.4s ease;
+    font-size: 17px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav-bar a:hover {
+    color: white;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+
+/* Updated card styles - BIGGER */
+.cards {
+  width: 250px;
+  background: white;
+  padding: .4em;
+  border-radius: 6px;
+  transition: transform 0.3s ease;
+}
+
+.card-image img{
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 170px;
+  border-radius: 6px 6px 0 0;
+}
+
+.card-image:hover {
+  transform: scale(0.98);
+}
+
+.category {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-weight: 600;
+  color: rgb(63, 121, 230);
+  padding: 10px 7px 0;
+}
+
+.category:hover {
+  cursor: pointer;
+}
+
+.heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading:hover {
+  cursor: pointer;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 20px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.name:hover {
+  cursor: pointer;
+}
+
+/* Cards container - 5 PER ROW */
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(5, 250px);
+  gap: 55px;
+  padding: 25px;
+  margin-top: 150px;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-art {
+  text-decoration: none;
+  display: inline-block;
+  opacity: 0;
+  animation: slideInFromLeft 0.6s ease-out forwards;
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.first-art:nth-child(1) { animation-delay: 0.1s; }
+.first-art:nth-child(2) { animation-delay: 0.2s; }
+.first-art:nth-child(3) { animation-delay: 0.3s; }
+.first-art:nth-child(4) { animation-delay: 0.4s; }
+.first-art:nth-child(5) { animation-delay: 0.5s; }
+.first-art:nth-child(6) { animation-delay: 0.6s; }
+.first-art:nth-child(7) { animation-delay: 0.7s; }
+.first-art:nth-child(8) { animation-delay: 0.8s; }
+.first-art:nth-child(9) { animation-delay: 0.9s; }
+.first-art:nth-child(10) { animation-delay: 1s; }

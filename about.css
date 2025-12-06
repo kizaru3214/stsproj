@@ -1,0 +1,361 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background: #0a0e27;
+        color: #fff;
+        overflow-x: hidden;
+      }
+
+      .nav-container {
+        padding: 2rem;
+        display: flex;
+        justify-content: center;
+        animation: slideDown 0.6s ease-out;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+        background: rgba(10, 14, 39, 0.95);
+        backdrop-filter: blur(10px);
+      }
+
+      @keyframes slideDown {
+        from {
+          transform: translateY(-100%);
+          opacity: 0;
+        }
+        to {
+          transform: translateY(0);
+          opacity: 1;
+        }
+      }
+
+      .nav {
+        background: transparent;
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        border-radius: 50px;
+        padding: 0.5rem 1rem;
+        display: flex;
+        gap: 0;
+        backdrop-filter: blur(10px);
+      }
+
+      .nav a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0.8rem 2.5rem;
+        font-size: 0.95rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        transition: all 0.3s ease;
+        border-radius: 40px;
+      }
+
+      .nav a:hover {
+        background: rgba(100, 181, 246, 0.2);
+        color: #64b5f6;
+        box-shadow: 0 0 20px rgba(100, 181, 246, 0.5);
+      }
+
+      .magazine-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 120px 4% 4rem 4%;
+      }
+
+      /* Hero Magazine Header */
+      .magazine-hero {
+        text-align: center;
+        padding: 4rem 0;
+        border-bottom: 1px solid rgba(100, 181, 246, 0.2);
+        margin-bottom: 4rem;
+        animation: fadeIn 1s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .issue-label {
+        font-size: 0.9rem;
+        letter-spacing: 3px;
+        color: #64b5f6;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+      }
+
+      .magazine-title {
+        font-size: 5rem;
+        font-weight: 900;
+        margin-bottom: 1rem;
+        background: linear-gradient(90deg, #ffffff 0%, #64b5f6 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        line-height: 1.1;
+      }
+
+      .magazine-subtitle {
+        font-size: 1.3rem;
+        color: #aaa;
+        font-style: italic;
+      }
+
+      /* Feature Article */
+      .feature-article {
+        display: grid;
+        grid-template-columns: 1.2fr 1fr;
+        gap: 4rem;
+        margin-bottom: 5rem;
+        align-items: center;
+        animation: slideInLeft 0.8s ease-out;
+      }
+
+      @keyframes slideInLeft {
+        from {
+          opacity: 0;
+          transform: translateX(-50px);
+        }
+        to {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+
+      .feature-content h2 {
+        font-size: 3rem;
+        margin-bottom: 1.5rem;
+        color: #64b5f6;
+        line-height: 1.2;
+      }
+
+      .feature-content .author-info {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-bottom: 2rem;
+        color: #888;
+        font-size: 0.9rem;
+      }
+
+      .feature-content p {
+        font-size: 1.1rem;
+        line-height: 1.9;
+        color: #ccc;
+        margin-bottom: 1.5rem;
+      }
+
+      .feature-image {
+        position: relative;
+        height: 500px;
+        background: linear-gradient(
+          135deg,
+          rgba(100, 181, 246, 0.2) 0%,
+          rgba(100, 181, 246, 0.05) 100%
+        );
+        border-radius: 15px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgba(100, 181, 246, 0.2);
+      }
+
+      .feature-image svg {
+        width: 80%;
+        height: 80%;
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
+
+      /* Two Column Articles */
+      .two-column-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        margin-bottom: 4rem;
+      }
+
+      .article-card {
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(100, 181, 246, 0.1);
+        border-radius: 15px;
+        padding: 2.5rem;
+        transition: all 0.3s ease;
+        animation: fadeInUp 0.8s ease-out both;
+      }
+
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .article-card:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .article-card:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .article-card:hover {
+        transform: translateY(-5px);
+        border-color: #64b5f6;
+        box-shadow: 0 10px 40px rgba(100, 181, 246, 0.2);
+      }
+
+      .article-card h3 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
+        color: #64b5f6;
+      }
+
+      .article-card .meta {
+        font-size: 0.85rem;
+        color: #888;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-bottom: 1.5rem;
+      }
+
+      .article-card p {
+        font-size: 1rem;
+        line-height: 1.8;
+        color: #bbb;
+      }
+
+      /* Pull Quote */
+      .pull-quote {
+        text-align: center;
+        padding: 4rem 10%;
+        margin: 4rem 0;
+        border-top: 1px solid rgba(100, 181, 246, 0.2);
+        border-bottom: 1px solid rgba(100, 181, 246, 0.2);
+        animation: fadeIn 1s ease-out;
+      }
+
+      .pull-quote blockquote {
+        font-size: 2.5rem;
+        font-style: italic;
+        line-height: 1.4;
+        color: #64b5f6;
+        margin-bottom: 1rem;
+      }
+
+      .pull-quote cite {
+        font-size: 1rem;
+        color: #888;
+        font-style: normal;
+      }
+
+      /* Three Column Grid */
+      .three-column-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        margin-bottom: 4rem;
+      }
+
+      .mini-article {
+        background: rgba(255, 255, 255, 0.03);
+        border-left: 3px solid #64b5f6;
+        padding: 2rem;
+        transition: all 0.3s ease;
+        animation: fadeInUp 0.8s ease-out both;
+      }
+
+      .mini-article:nth-child(1) {
+        animation-delay: 0.1s;
+      }
+      .mini-article:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+      .mini-article:nth-child(3) {
+        animation-delay: 0.3s;
+      }
+
+      .mini-article:hover {
+        background: rgba(100, 181, 246, 0.05);
+        transform: translateX(10px);
+      }
+
+      .mini-article h4 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+        color: #fff;
+      }
+
+      .mini-article p {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        color: #aaa;
+      }
+
+      /* Footer Section */
+      .magazine-footer {
+        text-align: center;
+        padding: 3rem 0;
+        border-top: 1px solid rgba(100, 181, 246, 0.2);
+        margin-top: 4rem;
+      }
+
+      .magazine-footer p {
+        color: #888;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 1024px) {
+        .feature-article {
+          grid-template-columns: 1fr;
+        }
+
+        .two-column-section {
+          grid-template-columns: 1fr;
+        }
+
+        .three-column-section {
+          grid-template-columns: 1fr;
+        }
+
+        .magazine-title {
+          font-size: 3rem;
+        }
+
+        .feature-content h2 {
+          font-size: 2rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .magazine-title {
+          font-size: 2.5rem;
+        }
+
+        .pull-quote blockquote {
+          font-size: 1.8rem;
+        }
+      }
