@@ -1,17 +1,12 @@
 /*explore.css*/
 body {
-    background-image: url('Images/image5.png');
-    background-size: cover;
-    background-position: center top;
-    background-repeat: no-repeat;
-    overflow-x: hidden;
-    overflow-y: auto;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transform: none; /* remove forced scale */
-    transform-origin: initial;
-    max-width: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+    background: #000;
+    transform-origin: top left;
+    transform: scale(0.8); /* 80% zoom effect */
 }
 
 
