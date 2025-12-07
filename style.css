@@ -64,7 +64,6 @@ body {
     transform-origin: 0 0; /* Scale from the top left corner */
     width: 125%; /* Compensate for the scaling so that content doesn't get clipped */
 }
-
 .nav-bar {
     padding-left: 41%;
     padding-top: 40px;
