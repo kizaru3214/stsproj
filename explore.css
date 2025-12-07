@@ -8,9 +8,7 @@ body {
     width: 1920px;
     transform: scale(calc(100vw / 1920));
     transform-origin: top left;
-    transform: scale(0.9); /* 80% zoom effect */
-    transform-origin: 0 0; /* Scale from the top left corner */
-    width: 100%; /* Compensate for the scaling so that content doesn't get clipped */
+    transform: scale(1); /* 80% zoom effect */
 }
 
 
