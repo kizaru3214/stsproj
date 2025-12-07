@@ -64,12 +64,7 @@ body {
     transform-origin: 0 0; /* Scale from the top left corner */
     width: 125%; /* Compensate for the scaling so that content doesn't get clipped */
 }
-@media (min-width: 1440px) {
-  html, body {
-    transform: scale(1); /* 100% scale for larger screens */
-    width: 100%; /* Reset the width */
-  }
-}
+
 .nav-bar {
     padding-left: 41%;
     padding-top: 40px;
