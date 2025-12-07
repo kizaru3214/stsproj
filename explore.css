@@ -21,13 +21,11 @@ body {
 }
 
 .cards img {
-   flex: 0 0 clamp(260px, 45vw, 600px); /* responsive width */
-    height: clamp(50vh, 80vh, 100vh);    /* responsive height */
+    width: 480px;
+    height: 100vh;
     object-fit: cover;
     filter: brightness(0.7);
-    transition: filter 0.4s ease, transform 0.3s ease;
-    scroll-snap-align: center;
-    border-radius: 6px;
+    transition: filter 0.4s ease;
 }
 
 @keyframes slideInCard {
