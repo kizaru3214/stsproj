@@ -3,6 +3,7 @@
         transform: translateY(-100px);
         opacity: 0F;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -14,6 +15,7 @@
         transform: translateX(-100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -25,6 +27,7 @@
         transform: translateX(100px);
         opacity: 0;
     }
+
     100% {
         transform: translateX(0);
         opacity: 1;
@@ -36,6 +39,7 @@
         transform: translateY(100px);
         opacity: 0;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -46,6 +50,7 @@
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
@@ -60,10 +65,8 @@ body {
     overflow-x: hidden;
     overflow-y: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transform: scale(0.8); /* 80% zoom effect */
-    transform-origin: 0 0; /* Scale from the top left corner */
-    width: 125%; /* Compensate for the scaling so that content doesn't get clipped */
 }
+
 .nav-bar {
     padding-left: 41%;
     padding-top: 40px;
@@ -283,12 +286,14 @@ body {
     width: 300px;
     animation: slideInFromBottom 0.8s ease-out 0.8s both;
 }
+
 .fourth-disc p {
     font-size: 25px;
     position: relative;
     top: -15px;
-    
+
 }
+
 .fourth-disc h3 {
     position: relative;
     top: -32px;
@@ -319,191 +324,199 @@ body {
 
 
 .button {
-  --black-700: rgb(25, 25, 26);
-  --border_radius: 9999px;
-  --transtion: 0.3s ease-in-out;
-  --offset: 2px;
-  cursor: pointer;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  transform-origin: center;
-  top: -100px;
-  left: 120px;
-  padding: 1rem 2rem;
-  background-color: transparent;
-  border: none;
-  border-radius: var(--border_radius);
-  transform: scale(calc(1 + (var(--active, 0) * 0.1)));
-  transition: transform var(--transtion);
-  animation: fadeIn 1s ease-out 0.6s both;
-  
+    --black-700: rgb(25, 25, 26);
+    --border_radius: 9999px;
+    --transtion: 0.3s ease-in-out;
+    --offset: 2px;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transform-origin: center;
+    top: -100px;
+    left: 120px;
+    padding: 1rem 2rem;
+    background-color: transparent;
+    border: none;
+    border-radius: var(--border_radius);
+    transform: scale(calc(1 + (var(--active, 0) * 0.1)));
+    transition: transform var(--transtion);
+    animation: fadeIn 1s ease-out 0.6s both;
+
 }
-.wawbutton a{
-  text-decoration: none;
+
+.wawbutton a {
+    text-decoration: none;
 }
+
 .button a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 .button::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  width: 100%;
-  height: 100%;
-  background-color: var(--black-700);
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-700);
 
-  border-radius: var(--border_radius);
-    
+    border-radius: var(--border_radius);
 
-  transition: all var(--transtion);
-  z-index: 0;
+
+    transition: all var(--transtion);
+    z-index: 0;
 }
 
 .button::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  width: 100%;
-  height: 100%;
-  background-color: rgb(30, 30, 31);
-  background-image: radial-gradient(
-      at 51% 89%,
-      rgb(30, 30, 31) 0px,
-      transparent 50%
-    ),
-    radial-gradient(at 100% 100%, rgb(30, 30, 31) 0px, transparent 50%),
-    radial-gradient(at 22% 91%, rgb(30, 30, 31)  0px, transparent 50%);
-  background-position: top;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(30, 30, 31);
+    background-image: radial-gradient(at 51% 89%,
+            rgb(30, 30, 31) 0px,
+            transparent 50%),
+        radial-gradient(at 100% 100%, rgb(30, 30, 31) 0px, transparent 50%),
+        radial-gradient(at 22% 91%, rgb(30, 30, 31) 0px, transparent 50%);
+    background-position: top;
 
-  opacity: var(--active, 0);
-  border-radius: var(--border_radius);
-  transition: opacity var(--transtion);
-  z-index: 2;
+    opacity: var(--active, 0);
+    border-radius: var(--border_radius);
+    transition: opacity var(--transtion);
+    z-index: 2;
 }
 
 .button:is(:hover, :focus-visible) {
-  --active: 1;
+    --active: 1;
 }
+
 .button:active {
-  transform: scale(1);
+    transform: scale(1);
 }
 
 .button .dots_border {
-  --size_border: calc(100% + 2px);
+    --size_border: calc(100% + 2px);
 
-  overflow: hidden;
+    overflow: hidden;
 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-  width: var(--size_border);
-  height: var(--size_border);
-  background-color: transparent;
+    width: var(--size_border);
+    height: var(--size_border);
+    background-color: transparent;
 
-  border-radius: var(--border_radius);
-  z-index: -10;
+    border-radius: var(--border_radius);
+    z-index: -10;
 }
 
 .button .dots_border::before {
-  content: "";
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform-origin: left;
-  transform: rotate(0deg);
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: left;
+    transform: rotate(0deg);
 
-  width: 100%;
-  height: 2rem;
-  background-color: white;
+    width: 100%;
+    height: 2rem;
+    background-color: white;
 
-  mask: linear-gradient(transparent 0%, white 120%);
-  animation: rotate 2s linear infinite;
+    mask: linear-gradient(transparent 0%, white 120%);
+    animation: rotate 2s linear infinite;
 }
 
 @keyframes rotate {
-  to {
-    transform: rotate(360deg);
-  }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .button .sparkle {
-  position: relative;
-  z-index: 10;
+    position: relative;
+    z-index: 10;
 
-  width: 1.75rem;
+    width: 1.75rem;
 }
 
 .button .sparkle .path {
-  fill: currentColor;
-  stroke: currentColor;
+    fill: currentColor;
+    stroke: currentColor;
 
-  transform-origin: center;
+    transform-origin: center;
 
-  color: hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
 }
 
 .button:is(:hover, :focus) .sparkle .path {
-  animation: path 1.5s linear 0.5s infinite;
+    animation: path 1.5s linear 0.5s infinite;
 }
 
 .button .sparkle .path:nth-child(1) {
-  --scale_path_1: 1.2;
+    --scale_path_1: 1.2;
 }
+
 .button .sparkle .path:nth-child(2) {
-  --scale_path_2: 1.2;
+    --scale_path_2: 1.2;
 }
+
 .button .sparkle .path:nth-child(3) {
-  --scale_path_3: 1.2;
+    --scale_path_3: 1.2;
 }
 
 @keyframes path {
-  0%,
-  34%,
-  71%,
-  100% {
-    transform: scale(1);
-  }
-  17% {
-    transform: scale(var(--scale_path_1, 1));
-  }
-  49% {
-    transform: scale(var(--scale_path_2, 1));
-  }
-  83% {
-    transform: scale(var(--scale_path_3, 1));
-  }
+
+    0%,
+    34%,
+    71%,
+    100% {
+        transform: scale(1);
+    }
+
+    17% {
+        transform: scale(var(--scale_path_1, 1));
+    }
+
+    49% {
+        transform: scale(var(--scale_path_2, 1));
+    }
+
+    83% {
+        transform: scale(var(--scale_path_3, 1));
+    }
 }
 
 .button .text_button {
-  position: relative;
-  z-index: 10;
+    position: relative;
+    z-index: 10;
 
-  background-image: linear-gradient(
-    90deg,
-    hsla(0 0% 100% / 1) 0%,
-    hsla(0 0% 100% / var(--active, 0)) 120%
-  );
-  background-clip: text;
+    background-image: linear-gradient(90deg,
+            hsla(0 0% 100% / 1) 0%,
+            hsla(0 0% 100% / var(--active, 0)) 120%);
+    background-clip: text;
 
-  font-size: 1rem;
-  color: transparent;
+    font-size: 1rem;
+    color: transparent;
 }
 
 /* Mobile responsiveness */
 @media (max-width: 1024px) {
-    .second-disc, .third-disc, .fourth-disc {
+
+    .second-disc,
+    .third-disc,
+    .fourth-disc {
         display: block;
         width: 85%;
         max-width: 400px;
@@ -524,7 +537,7 @@ body {
         padding-left: 5%;
         padding-right: 5%;
     }
-    
+
     .nav-bar a {
         display: block;
         padding: 10px 0;
@@ -539,7 +552,9 @@ body {
         font-size: 14px;
     }
 
-    .second-disc, .third-disc, .fourth-disc {
+    .second-disc,
+    .third-disc,
+    .fourth-disc {
         width: 100%;
         margin: 10px auto;
     }
@@ -548,7 +563,8 @@ body {
         font-size: 100px;
     }
 
-    .first-disc p, .second-disc p {
+    .first-disc p,
+    .second-disc p {
         font-size: 14px;
     }
 }
@@ -571,12 +587,15 @@ body {
         font-size: 80px;
     }
 
-    .first-disc p, .second-disc p {
+    .first-disc p,
+    .second-disc p {
         font-size: 12px;
         text-align: center;
     }
 
-    .second-disc, .third-disc, .fourth-disc {
+    .second-disc,
+    .third-disc,
+    .fourth-disc {
         width: 100%;
         max-width: 350px;
     }

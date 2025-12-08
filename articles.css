@@ -6,9 +6,6 @@ body {
     background-repeat: no-repeat;
     overflow-x: hidden;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    transform: scale(0.8); /* 80% zoom effect */
-    transform-origin: 0 0; /* Scale from the top left corner */
-    width: 125%; /* Compensate for the scaling so that content doesn't get clipped */
 }
 
 .nav-bar {
